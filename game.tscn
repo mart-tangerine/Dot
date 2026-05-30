@@ -4003,21 +4003,29 @@ custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Sep3" type="HSeparator" parent="Files/Files/Hernya" unique_id=1547487435]
+visible = false
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxLine_v33yl")
 
 [node name="Sounds2" type="Label" parent="Files/Files/Hernya" unique_id=83815517]
+visible = false
 layout_mode = 2
 text = "Шрифты"
 label_settings = SubResource("LabelSettings_2tki7")
 
 [node name="Fonts" type="VBoxContainer" parent="Files/Files/Hernya" unique_id=557173701]
+visible = false
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 
 [node name="Sep4" type="HSeparator" parent="Files/Files/Hernya" unique_id=1538788375]
 layout_mode = 2
 theme_override_styles/separator = SubResource("StyleBoxLine_v33yl")
+
+[node name="Sounds3" type="Label" parent="Files/Files/Hernya" unique_id=1999418529]
+layout_mode = 2
+text = "Экспорт"
+label_settings = SubResource("LabelSettings_2tki7")
 
 [node name="ExpProj" type="Button" parent="Files/Files/Hernya" unique_id=1776896830]
 layout_mode = 2
@@ -4031,6 +4039,15 @@ theme_override_styles/disabled = ExtResource("9_vef74")
 theme_override_styles/focus = SubResource("StyleBoxFlat_3gvs5")
 text = " Экспортировать проект"
 alignment = 0
+
+[node name="Sep5" type="HSeparator" parent="Files/Files/Hernya" unique_id=1693889425]
+layout_mode = 2
+theme_override_styles/separator = SubResource("StyleBoxLine_v33yl")
+
+[node name="Sounds4" type="Label" parent="Files/Files/Hernya" unique_id=128832942]
+layout_mode = 2
+text = "Удаление"
+label_settings = SubResource("LabelSettings_2tki7")
 
 [node name="DelProj" type="Button" parent="Files/Files/Hernya" unique_id=98555111]
 layout_mode = 2
@@ -6722,6 +6739,7 @@ offset_right = 190.0
 offset_bottom = 31.0
 
 [node name="Collobjorclone" type="Panel" parent="ModlKat/ScrollContainer/VBoxContainer/C" unique_id=77785709]
+visible = false
 custom_minimum_size = Vector2(90, 31)
 layout_mode = 2
 theme_override_styles/panel = ExtResource("7_eow3j")

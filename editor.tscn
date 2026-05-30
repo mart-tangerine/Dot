@@ -2112,6 +2112,7 @@ autowrap_mode = 2
 vertical_alignment = 2
 
 [node name="System" type="FoldableContainer" parent="Setts/Setts/MainSetts/Setts" unique_id=220251318]
+visible = false
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_1ys5w")
 theme_override_styles/title_panel = ExtResource("2_gbsbp")
