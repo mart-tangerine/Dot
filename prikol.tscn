@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://bejx3oddyqpjv"]
+
+[ext_resource type="Script" uid="uid://bkkhv3btpg61g" path="res://Scripts/prikol.gd" id="1_scq7b"]
+[ext_resource type="Texture2D" uid="uid://7onad05xqmwh" path="res://Icons/circle.png" id="1_x3w41"]
+[ext_resource type="FontFile" uid="uid://dtuvup1el4xec" path="res://Fonts/Nunito-Black.ttf" id="3_w7gvo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_scq7b"]
+radius = 45.510986
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w7gvo"]
+size = Vector2(1, 2000)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_x3w41"]
+size = Vector2(8000, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_mmc1l"]
+font = ExtResource("3_w7gvo")
+font_size = 20
+
+[node name="prikol" type="Node2D" unique_id=495549184]
+script = ExtResource("1_scq7b")
+
+[node name="dot" type="RigidBody2D" parent="." unique_id=1887064460]
+position = Vector2(212.5, -250)
+freeze = true
+
+[node name="Sprite2D" type="Sprite2D" parent="dot" unique_id=371540726]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+scale = Vector2(0.15, 0.15)
+texture = ExtResource("1_x3w41")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="dot" unique_id=889860583]
+shape = SubResource("CircleShape2D_scq7b")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1804905340]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1847111344]
+shape = SubResource("RectangleShape2D_w7gvo")
+
+[node name="Rig" type="StaticBody2D" parent="." unique_id=1922064294]
+position = Vector2(425, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rig" unique_id=164396832]
+shape = SubResource("RectangleShape2D_w7gvo")
+
+[node name="Dn" type="StaticBody2D" parent="." unique_id=744425500]
+position = Vector2(0, 850)
+rotation = 0.0017453292
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Dn" unique_id=1743468626]
+shape = SubResource("RectangleShape2D_x3w41")
+
+[node name="Label" type="Label" parent="." unique_id=750122844]
+z_index = 999
+offset_right = 425.0
+offset_bottom = 850.0
+text = "Бро, ты нашел это"
+label_settings = SubResource("LabelSettings_mmc1l")
+horizontal_alignment = 1
+vertical_alignment = 1

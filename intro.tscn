@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://senuvob3fumc"]
+
+[ext_resource type="Script" uid="uid://py4odvmaljsp" path="res://Scripts/intro.gd" id="1_ayt76"]
+[ext_resource type="Texture2D" uid="uid://7onad05xqmwh" path="res://Icons/circle.png" id="1_s2ta7"]
+
+[sub_resource type="Gradient" id="Gradient_ayt76"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_7a8ye"]
+gradient = SubResource("Gradient_ayt76")
+
+[sub_resource type="Curve" id="Curve_0a7ni"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.5853659, 0.9550562), -2.5797756, -2.5797756, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_y72e6"]
+curve = SubResource("Curve_0a7ni")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_u2rf6"]
+particle_flag_disable_z = true
+spread = 180.0
+initial_velocity_min = 303.8
+initial_velocity_max = 392.4
+orbit_velocity_min = 9.49949e-08
+orbit_velocity_max = 9.49949e-08
+gravity = Vector3(0, 0, 0)
+damping_min = 100.00001
+damping_max = 100.00001
+scale_min = 0.02
+scale_max = 0.04
+scale_curve = SubResource("CurveTexture_y72e6")
+color = Color(0.9019608, 0.6627451, 1, 1)
+color_ramp = SubResource("GradientTexture1D_7a8ye")
+
+[node name="Intro" type="Control" unique_id=725079354]
+self_modulate = Color(1, 1, 1, 0)
+z_index = 999
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_ayt76")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1492143656]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 425.0
+offset_bottom = 850.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Dot" type="Sprite2D" parent="." unique_id=1187234984]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+scale = Vector2(1e-05, 1e-05)
+texture = ExtResource("1_s2ta7")
+
+[node name="Parts" type="GPUParticles2D" parent="." unique_id=1622343692]
+emitting = false
+amount = 100
+texture = ExtResource("1_s2ta7")
+lifetime = 1.06
+process_material = SubResource("ParticleProcessMaterial_u2rf6")

@@ -1,0 +1,77 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Dot"
+config/version="UI Demo"
+run/main_scene="uid://senuvob3fumc"
+config/quit_on_go_back=false
+config/features=PackedStringArray("4.6", "GL Compatibility")
+boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/show_image=false
+config/icon="uid://b4p42n6k2gxyc"
+
+[autoload]
+
+Disp="*uid://6tkwg2xn5ey0"
+Dot="*uid://dmrswmdifu0t6"
+Modcore="*uid://dob2wqa6s1sdf"
+
+[display]
+
+window/size/viewport_width=425
+window/size/viewport_height=850
+window/size/mode=3
+window/size/transparent=true
+window/stretch/aspect="ignore"
+window/stretch/scale_mode="integer"
+window/per_pixel_transparency/allowed=true
+window/handheld/orientation=5
+window/vsync/vsync_mode=0
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/lua-gdextension/plugin.cfg", "res://addons/post_processing/plugin.cfg", "res://addons/postfx/plugin.cfg", "res://addons/tattomoosa.spinner/plugin.cfg")
+
+[input]
+
+ui_left={
+"deadzone": 0.5,
+"events": []
+}
+ui_right={
+"deadzone": 0.5,
+"events": []
+}
+ui_up={
+"deadzone": 0.5,
+"events": []
+}
+ui_down={
+"deadzone": 0.5,
+"events": []
+}
+
+[input_devices]
+
+pointing/emulate_touch_from_mouse=true
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+viewport/transparent_background=true

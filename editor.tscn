@@ -1,0 +1,2507 @@
+[gd_scene format=3 uid="uid://dnu63mb4l87be"]
+
+[ext_resource type="Script" uid="uid://bet7k5ncxeo8g" path="res://Scripts/Menu.gd" id="1_1ys5w"]
+[ext_resource type="FontFile" uid="uid://chgqgop5mv53j" path="res://Fonts/Nunito-Medium.ttf" id="1_4s0cy"]
+[ext_resource type="FontFile" uid="uid://dtuvup1el4xec" path="res://Fonts/Nunito-Black.ttf" id="2_1ys5w"]
+[ext_resource type="StyleBox" uid="uid://dsjgaivgehm34" path="res://UIpanel.tres" id="2_gbsbp"]
+[ext_resource type="Script" uid="uid://cd43ad1u37ivi" path="res://Scripts/project.gd" id="8_3btpq"]
+[ext_resource type="Script" uid="uid://coo5l6v2b5ag2" path="res://Scripts/my_projs.gd" id="8_7py46"]
+[ext_resource type="Texture2D" uid="uid://pvilffs0bnqe" path="res://Icons/turnon.png" id="9_8yjtx"]
+[ext_resource type="Texture2D" uid="uid://bse7mq7bv4r43" path="res://Icons/redact.png" id="10_3btpq"]
+[ext_resource type="Script" uid="uid://cwgcsp0ffpiup" path="res://Scripts/newproj.gd" id="10_mcmho"]
+[ext_resource type="Script" uid="uid://dnr2yk2hflnpg" path="res://Scripts/import.gd" id="11_thlol"]
+[ext_resource type="Script" uid="uid://c6htac85imc88" path="res://Scripts/last_project.gd" id="12_acw8i"]
+[ext_resource type="Texture2D" uid="uid://bwk4ym3o7yygr" path="res://Icons/setts.png" id="12_ta0gc"]
+[ext_resource type="Texture2D" uid="uid://4rd03g8qload" path="res://Icons/folder.png" id="13_ajpey"]
+[ext_resource type="Texture2D" uid="uid://2m7jacprx8ok" path="res://Icons/delete.png" id="13_kwc7g"]
+[ext_resource type="Texture2D" uid="uid://4hqk44cyfos1" path="res://Icons/youtube.png" id="14_pw4om"]
+[ext_resource type="Texture2D" uid="uid://b3g5gy3rhoixp" path="res://Icons/telega.png" id="15_2ok6a"]
+[ext_resource type="Script" uid="uid://dgn1t4mn4cvdx" path="res://Scripts/new_proj.gd" id="15_wksbx"]
+[ext_resource type="Texture2D" uid="uid://rm06jra3lvyf" path="res://Icons/itch.png" id="16_00gtv"]
+[ext_resource type="Texture2D" uid="uid://bc54me41r56r6" path="res://Icons/ds.webp" id="17_4vdhj"]
+[ext_resource type="Texture2D" uid="uid://do1hx06tko5me" path="res://Icons/info.png" id="18_00gtv"]
+[ext_resource type="Script" uid="uid://b0d8jipcs182p" path="res://Scripts/Setts.gd" id="18_2qtvm"]
+[ext_resource type="StyleBox" uid="uid://boxogw4ryehnu" path="res://BlockDesign/LogicBlock.tres" id="18_mcmho"]
+[ext_resource type="StyleBox" uid="uid://ctrt14o7ucjcu" path="res://BlockDesign/LineNorm.tres" id="19_thlol"]
+[ext_resource type="StyleBox" uid="uid://v3468tj0stnx" path="res://BlockDesign/LineFocus.tres" id="20_ta0gc"]
+[ext_resource type="Script" uid="uid://cp1u1x3nrr06o" path="res://Scripts/obrabotka-1x1.gd" id="22_acw8i"]
+[ext_resource type="Texture2D" uid="uid://7onad05xqmwh" path="res://Icons/circle.png" id="22_c5twx"]
+[ext_resource type="StyleBox" uid="uid://jymvq7ppqcp1" path="res://BlockDesign/DeviceBlock.tres" id="23_pw4om"]
+[ext_resource type="Script" uid="uid://c8pb4v82nipmk" path="res://Scripts/obrabotka-2x1.gd" id="24_xr2sj"]
+[ext_resource type="Texture2D" uid="uid://b4p42n6k2gxyc" path="res://icon.png" id="25_x4q4l"]
+[ext_resource type="AudioStream" uid="uid://sxjr6n0tvq4j" path="res://Sounds/Click.mp3" id="26_ta0gc"]
+[ext_resource type="Script" uid="uid://gvnnlo6naqeq" path="res://Scripts/info.gd" id="34_x4q4l"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_f2bxa"]
+font = ExtResource("1_4s0cy")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_iur40"]
+font = ExtResource("1_4s0cy")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_p2lj5"]
+font = ExtResource("1_4s0cy")
+font_size = 12
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jhv33"]
+font = ExtResource("1_4s0cy")
+font_size = 12
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_k4288"]
+bg_color = Color(1, 1, 1, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.5882353, 1, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+shadow_color = Color(0, 0, 0, 0.23137255)
+shadow_size = 4
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2qtvm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x4q4l"]
+bg_color = Color(0.8, 0.5882353, 1, 0.5294118)
+border_color = Color(0.8018332, 0.59000003, 1, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(1, 1, 1, 0.039215688)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f2bxa"]
+bg_color = Color(0.7264935, 0.2463783, 0.9999986, 0.43529412)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8018332, 0.59000003, 1, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(1, 1, 1, 0.039215688)
+shadow_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_iur40"]
+bg_color = Color(0.7264935, 0.2463783, 0.9999986, 0.43529412)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8018332, 0.59000003, 1, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(1, 1, 1, 0.039215688)
+shadow_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_b2p7y"]
+font = ExtResource("1_4s0cy")
+font_size = 24
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="Gradient" id="Gradient_qdoku"]
+offsets = PackedFloat32Array(0, 0.51875, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.09, 0.09, 0.09, 1, 0.17, 0.17, 0.17, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wlowb"]
+gradient = SubResource("Gradient_qdoku")
+width = 450
+height = 900
+fill_from = Vector2(0, 0.5982906)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ajpey"]
+font = ExtResource("1_4s0cy")
+font_size = 26
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_x4q4l"]
+font = ExtResource("1_4s0cy")
+font_size = 120
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="Gradient" id="Gradient_3b0jk"]
+colors = PackedColorArray(1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_mcmho"]
+gradient = SubResource("Gradient_3b0jk")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_rn3w2"]
+particle_flag_disable_z = true
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 147.98999
+initial_velocity_max = 147.98999
+angular_velocity_min = -105.88001
+angular_velocity_max = 127.05998
+gravity = Vector3(0, 0, 0)
+damping_min = 66.581
+damping_max = 83.023
+scale_min = 0.01
+scale_max = 0.06
+color = Color(1, 1, 1, 0.16078432)
+color_ramp = SubResource("GradientTexture1D_mcmho")
+
+[sub_resource type="LabelSettings" id="LabelSettings_p8rao"]
+font = ExtResource("1_4s0cy")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_k4ldk"]
+font = ExtResource("1_4s0cy")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_jlrdv"]
+font = ExtResource("1_4s0cy")
+font_size = 14
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_ppjb3"]
+font = ExtResource("1_4s0cy")
+font_size = 12
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4vdhj"]
+font = ExtResource("1_4s0cy")
+font_size = 30
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2ok6a"]
+bg_color = Color(0.2989867, 0.00059282646, 0.43689814, 0.3137255)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.58843803, 0.0032160967, 0.88991046, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(1, 1, 1, 0.039215688)
+shadow_size = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_5kx52"]
+font = ExtResource("1_4s0cy")
+font_size = 24
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_w1ip7"]
+font = ExtResource("1_4s0cy")
+font_size = 70
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_dmum5"]
+font = ExtResource("1_4s0cy")
+font_size = 24
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6i2yb"]
+font = ExtResource("1_4s0cy")
+font_size = 38
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gbsbp"]
+bg_color = Color(0.5686275, 0.003921569, 0.8117647, 0.14117648)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.8, 0.5882353, 1, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_color = Color(0.31764707, 0, 0.43529412, 0.5176471)
+shadow_size = 4
+shadow_offset = Vector2(2, 2)
+
+[sub_resource type="LabelSettings" id="LabelSettings_3qshi"]
+font = ExtResource("2_1ys5w")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_f8yt5"]
+font = ExtResource("2_1ys5w")
+font_size = 14
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_gpw3a"]
+font = ExtResource("2_1ys5w")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_6yoe3"]
+font = ExtResource("2_1ys5w")
+font_size = 12
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kxsle"]
+bg_color = Color(0.5686275, 0.003921569, 0.8117647, 0)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.85490197, 0.7137255, 1, 0.8156863)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wksbx"]
+bg_color = Color(0.27414235, 0.00072740007, 0.4024888, 0.3372549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.48649764, 0.0021138063, 0.7402091, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3v1c7"]
+bg_color = Color(0.2988856, 0.0008666423, 0.43688023, 0.3372549)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.47644585, 0.00201947, 0.7254475, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="Theme" id="Theme_wksbx"]
+PopupMenu/colors/font_accelerator_color = Color(0.6461938, 0.00043404312, 0.6753002, 0.8)
+PopupMenu/colors/font_disabled_color = Color(0.8052832, 0.0005072981, 0.805134, 0.8)
+PopupMenu/font_sizes/font_separator_size = 12
+PopupMenu/font_sizes/font_size = 12
+PopupMenu/font_sizes/title_font_size = 12
+PopupMenu/fonts/font = ExtResource("2_1ys5w")
+PopupMenu/styles/hover = ExtResource("2_gbsbp")
+PopupMenu/styles/panel = ExtResource("2_gbsbp")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qd6k7"]
+bg_color = Color(0.5686275, 0.003921569, 0.8117647, 0.3372549)
+draw_center = false
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.89411765, 0.79607844, 1, 0.7372549)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2qtvm"]
+bg_color = Color(0.5670002, 0, 0.81, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.57812715, 0.0030903793, 0.8747698, 0.68235296)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="LabelSettings" id="LabelSettings_5i8rk"]
+font = ExtResource("1_4s0cy")
+font_size = 22
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hcdi5"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lmvvn"]
+bg_color = Color(0.60524523, 0.004825204, 0.8626357, 0.3372549)
+border_color = Color(0.8, 0.5882353, 1, 0.5294118)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_2ok6a"]
+font = ExtResource("2_1ys5w")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_00gtv"]
+font = ExtResource("2_1ys5w")
+font_size = 22
+
+[sub_resource type="LabelSettings" id="LabelSettings_thlol"]
+font = ExtResource("1_4s0cy")
+font_size = 36
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_eqr3n"]
+font = ExtResource("1_4s0cy")
+font_size = 17
+font_color = Color(0.9019608, 0.6627451, 1, 1)
+
+[node name="Menu" type="Control" unique_id=1382616302]
+custom_minimum_size = Vector2(100, 200)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ys5w")
+
+[node name="Holders" type="Control" parent="." unique_id=1152604860]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Project" type="Panel" parent="Holders" unique_id=1968461756]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 0
+offset_left = 35.0
+offset_top = 35.0
+offset_right = 390.0
+offset_bottom = 95.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+script = ExtResource("8_3btpq")
+
+[node name="Title" type="Label" parent="Holders/Project" unique_id=489701776]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 355.0
+offset_bottom = 40.0
+text = "?????"
+label_settings = SubResource("LabelSettings_f2bxa")
+autowrap_mode = 2
+
+[node name="Ver" type="Label" parent="Holders/Project" unique_id=1681876254]
+modulate = Color(1, 1, 1, 0.58431375)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 65.0
+offset_bottom = 48.0
+grow_horizontal = 2
+text = "????? "
+label_settings = SubResource("LabelSettings_iur40")
+horizontal_alignment = 2
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="Time" type="Label" parent="Holders/Project" unique_id=1147989538]
+modulate = Color(1, 1, 1, 0.58431375)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 65.0
+offset_bottom = 58.0
+grow_horizontal = 2
+text = "????? "
+label_settings = SubResource("LabelSettings_p2lj5")
+horizontal_alignment = 2
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="Subtitle" type="Label" parent="Holders/Project" unique_id=181555808]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 25.0
+offset_right = 265.0
+offset_bottom = 50.0
+text = "???"
+label_settings = SubResource("LabelSettings_jhv33")
+autowrap_mode = 2
+
+[node name="Filename" type="Label" parent="Holders/Project" unique_id=1145308826]
+visible = false
+layout_mode = 0
+offset_left = 65.0
+offset_top = 20.0
+offset_right = 265.0
+offset_bottom = 45.0
+text = "хз лол ты нашел этот прикол
+теперь иди учи ассембли лоооол"
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="Holders/Project" unique_id=329308356]
+clip_children = 2
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 55.0
+offset_bottom = 55.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_k4288")
+
+[node name="Icon" type="TextureRect" parent="Holders/Project/Panel" unique_id=320211440]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 50.0
+texture = SubResource("CompressedTexture2D_2qtvm")
+expand_mode = 1
+
+[node name="Butts" type="Control" parent="Holders/Project" unique_id=956502143]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1, 1e-05)
+
+[node name="Full" type="Control" parent="Holders/Project/Butts" unique_id=1682967654]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Holders/Project/Butts/Full" unique_id=143054971]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 60.0
+offset_right = 244.0
+offset_bottom = 95.0
+
+[node name="Launch" type="Button" parent="Holders/Project/Butts/Full/HBoxContainer" unique_id=1754039454]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[lnc] "
+icon = ExtResource("9_8yjtx")
+alignment = 0
+
+[node name="Edit" type="Button" parent="Holders/Project/Butts/Full/HBoxContainer" unique_id=1158106524]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[red] "
+icon = ExtResource("10_3btpq")
+alignment = 0
+text_direction = 1
+
+[node name="Delete" type="Button" parent="Holders/Project/Butts/Full/HBoxContainer" unique_id=1891834994]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[del] "
+icon = ExtResource("13_kwc7g")
+alignment = 0
+text_direction = 1
+
+[node name="Icons" type="Control" parent="Holders/Project/Butts" unique_id=268215234]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Launch" type="Panel" parent="Holders/Project/Butts/Icons" unique_id=114209641]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 60.0
+offset_right = 40.0
+offset_bottom = 95.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Icon" type="TextureRect" parent="Holders/Project/Butts/Icons/Launch" unique_id=933720682]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 30.0
+offset_bottom = 30.0
+texture = ExtResource("9_8yjtx")
+expand_mode = 1
+
+[node name="Launch" type="Button" parent="Holders/Project/Butts/Icons/Launch" unique_id=1314671772]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 35.0
+offset_bottom = 35.0
+
+[node name="Edit" type="Panel" parent="Holders/Project/Butts/Icons" unique_id=1679428086]
+layout_mode = 0
+offset_left = 45.0
+offset_top = 60.0
+offset_right = 80.0
+offset_bottom = 95.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Icon" type="TextureRect" parent="Holders/Project/Butts/Icons/Edit" unique_id=1256358678]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 30.0
+offset_bottom = 30.0
+texture = ExtResource("10_3btpq")
+expand_mode = 1
+
+[node name="Edit" type="Button" parent="Holders/Project/Butts/Icons/Edit" unique_id=553168273]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 35.0
+offset_bottom = 35.0
+
+[node name="Delete" type="Panel" parent="Holders/Project/Butts/Icons" unique_id=1466016767]
+layout_mode = 0
+offset_left = 85.0
+offset_top = 60.0
+offset_right = 120.0
+offset_bottom = 95.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Icon" type="TextureRect" parent="Holders/Project/Butts/Icons/Delete" unique_id=640519607]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 30.0
+offset_bottom = 30.0
+texture = ExtResource("13_kwc7g")
+expand_mode = 1
+
+[node name="Delete" type="Button" parent="Holders/Project/Butts/Icons/Delete" unique_id=478405570]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 35.0
+offset_bottom = 35.0
+
+[node name="Error" type="Control" parent="Holders/Project/Butts" unique_id=1471319069]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="Holders/Project/Butts/Error" unique_id=1332838891]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 62.0
+offset_right = 198.0
+offset_bottom = 92.75
+text = "Несовместимо"
+label_settings = SubResource("LabelSettings_b2p7y")
+
+[node name="Delete" type="Button" parent="Holders/Project/Butts/Error" unique_id=364231062]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 60.0
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+icon = ExtResource("13_kwc7g")
+alignment = 0
+icon_alignment = 1
+text_direction = 1
+
+[node name="Touch" type="Button" parent="Holders/Project" unique_id=2089550795]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 355.0
+offset_bottom = 60.0
+
+[node name="BG" type="TextureRect" parent="." unique_id=1412240375]
+modulate = Color(0.7049046, 0.26740044, 1, 1)
+z_index = -2
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture2D_wlowb")
+expand_mode = 1
+
+[node name="Inf" type="Label" parent="." unique_id=744095376]
+modulate = Color(1, 1, 1, 0.2627451)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -135.0
+offset_top = -85.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 0
+grow_vertical = 0
+text = "xXXX
+Vanilla"
+label_settings = SubResource("LabelSettings_ajpey")
+horizontal_alignment = 2
+vertical_alignment = 2
+
+[node name="Title" type="Label" parent="." unique_id=1567850385]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_bottom = 200.0
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+text = "D●T"
+label_settings = SubResource("LabelSettings_x4q4l")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Particles" type="GPUParticles2D" parent="Title" unique_id=839992511]
+z_index = -1
+position = Vector2(212.5, 100)
+texture = ExtResource("22_c5twx")
+process_material = SubResource("ParticleProcessMaterial_rn3w2")
+
+[node name="MainMenu" type="Control" parent="." unique_id=135844249]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LastProj" type="Panel" parent="MainMenu" unique_id=204423221]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 25.0
+offset_top = 180.0
+offset_right = -25.0
+offset_bottom = 310.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+script = ExtResource("12_acw8i")
+
+[node name="Cont" type="Control" parent="MainMenu/LastProj" unique_id=1925225211]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="MainMenu/LastProj/Cont" unique_id=876692682]
+layout_mode = 0
+offset_right = 375.0
+offset_bottom = 90.0
+text = " [contin]"
+label_settings = SubResource("LabelSettings_ajpey")
+autowrap_mode = 2
+
+[node name="Title" type="Label" parent="MainMenu/LastProj/Cont" unique_id=434554082]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 32.5
+offset_right = 355.0
+offset_bottom = 72.5
+text = "Айкон"
+label_settings = SubResource("LabelSettings_p8rao")
+autowrap_mode = 2
+
+[node name="Ver" type="Label" parent="MainMenu/LastProj/Cont" unique_id=1106849484]
+modulate = Color(1, 1, 1, 0.58431375)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+offset_left = 80.0
+offset_top = 27.5
+offset_right = -5.0
+offset_bottom = 75.5
+text = "v0.01"
+label_settings = SubResource("LabelSettings_k4ldk")
+horizontal_alignment = 2
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="Time" type="Label" parent="MainMenu/LastProj/Cont" unique_id=542634193]
+modulate = Color(1, 1, 1, 0.58431375)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 82.0
+offset_top = 27.5
+offset_right = -3.0
+offset_bottom = 85.5
+grow_horizontal = 2
+text = "16:51  19.06.2026 "
+label_settings = SubResource("LabelSettings_jlrdv")
+horizontal_alignment = 2
+vertical_alignment = 2
+autowrap_mode = 2
+
+[node name="Subtitle" type="Label" parent="MainMenu/LastProj/Cont" unique_id=1779195449]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 52.5
+offset_right = 265.0
+offset_bottom = 77.5
+text = "свг"
+label_settings = SubResource("LabelSettings_ppjb3")
+autowrap_mode = 2
+
+[node name="Filename" type="Label" parent="MainMenu/LastProj/Cont" unique_id=1087490992]
+visible = false
+layout_mode = 0
+offset_left = 65.0
+offset_top = 20.0
+offset_right = 265.0
+offset_bottom = 45.0
+text = "брооо я бы не стал пихать один и тот-же прикол в 2 разных места, это неинтересно брооооо"
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="MainMenu/LastProj/Cont" unique_id=224873807]
+clip_children = 2
+layout_mode = 0
+offset_left = 5.0
+offset_top = 35.0
+offset_right = 55.0
+offset_bottom = 85.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_k4288")
+
+[node name="Icon" type="TextureRect" parent="MainMenu/LastProj/Cont/Panel" unique_id=1663890063]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 50.0
+texture = SubResource("CompressedTexture2D_2qtvm")
+expand_mode = 1
+
+[node name="Butts" type="Control" parent="MainMenu/LastProj/Cont" unique_id=178107677]
+anchors_preset = 0
+offset_top = 30.0
+offset_right = 40.0
+offset_bottom = 70.0
+
+[node name="Full" type="Control" parent="MainMenu/LastProj/Cont/Butts" unique_id=1314235142]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MainMenu/LastProj/Cont/Butts/Full" unique_id=1580511585]
+layout_mode = 0
+offset_left = 5.0
+offset_top = 60.0
+offset_right = 140.0
+offset_bottom = 95.0
+theme_override_constants/separation = 5
+
+[node name="Launch" type="Button" parent="MainMenu/LastProj/Cont/Butts/Full/HBoxContainer" unique_id=1125415391]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[lnc] "
+icon = ExtResource("9_8yjtx")
+alignment = 0
+
+[node name="Edit" type="Button" parent="MainMenu/LastProj/Cont/Butts/Full/HBoxContainer" unique_id=612251585]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[red] "
+icon = ExtResource("10_3btpq")
+alignment = 0
+text_direction = 1
+
+[node name="Icons" type="Control" parent="MainMenu/LastProj/Cont/Butts" unique_id=1435771513]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Launch" type="Button" parent="MainMenu/LastProj/Cont/Butts/Icons" unique_id=799487084]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 60.0
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+icon = ExtResource("9_8yjtx")
+alignment = 0
+icon_alignment = 1
+text_direction = 1
+
+[node name="Edit" type="Button" parent="MainMenu/LastProj/Cont/Butts/Icons" unique_id=1098996269]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 45.0
+offset_top = 60.0
+offset_right = 40.0
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+icon = ExtResource("10_3btpq")
+alignment = 0
+icon_alignment = 1
+text_direction = 1
+
+[node name="Error" type="Control" parent="MainMenu/LastProj/Cont/Butts" unique_id=55775539]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="MainMenu/LastProj/Cont/Butts/Error" unique_id=1685339541]
+layout_mode = 0
+offset_left = 50.0
+offset_top = 62.0
+offset_right = 198.0
+offset_bottom = 92.75
+text = "Несовместимо"
+label_settings = SubResource("LabelSettings_b2p7y")
+
+[node name="Delete" type="Button" parent="MainMenu/LastProj/Cont/Butts/Error" unique_id=1565054548]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 5.0
+offset_top = 60.0
+offset_bottom = 95.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_colors/icon_normal_color = Color(1, 0.7764706, 1, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/h_separation = 2
+theme_override_constants/icon_max_width = 25
+theme_override_constants/line_spacing = 0
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+icon = ExtResource("13_kwc7g")
+alignment = 0
+icon_alignment = 1
+text_direction = 1
+
+[node name="New" type="Control" parent="MainMenu/LastProj" unique_id=1061079116]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="new" type="Button" parent="MainMenu/LastProj/New" unique_id=227691757]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 9.375
+anchor_bottom = 3.2500002
+offset_bottom = -1.5258789e-05
+
+[node name="Label" type="Label" parent="MainMenu/LastProj/New" unique_id=314628842]
+layout_mode = 0
+offset_right = 134.0
+offset_bottom = 130.0
+text = " + [newproj]"
+label_settings = SubResource("LabelSettings_4vdhj")
+vertical_alignment = 1
+
+[node name="ProjFold" type="Button" parent="MainMenu" unique_id=222287259]
+layout_mode = 1
+offset_left = 25.0
+offset_top = 320.0
+offset_right = 75.0
+offset_bottom = 370.0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/ProjFold" unique_id=809076319]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 7.5
+offset_top = 7.5
+offset_right = 42.5
+offset_bottom = 42.5
+mouse_filter = 2
+texture = ExtResource("13_ajpey")
+expand_mode = 1
+
+[node name="MyProjs" type="Button" parent="MainMenu" unique_id=405203527]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 82.5
+offset_top = 320.0
+offset_right = -25.0
+offset_bottom = 370.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[projs]"
+
+[node name="Info" type="Button" parent="MainMenu" unique_id=1147433314]
+layout_mode = 1
+offset_left = 25.0
+offset_top = 380.0
+offset_right = 75.0
+offset_bottom = 430.0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/Info" unique_id=1103105495]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 7.5
+offset_top = 7.5
+offset_right = 42.5
+offset_bottom = 42.5
+mouse_filter = 2
+texture = ExtResource("18_00gtv")
+expand_mode = 1
+
+[node name="Docs" type="Button" parent="MainMenu" unique_id=7275191]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 82.5
+offset_top = 380.0
+offset_right = -25.0
+offset_bottom = 431.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2ok6a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+disabled = true
+text = "[docs]"
+
+[node name="OpenSetts" type="Button" parent="MainMenu" unique_id=1981059495]
+layout_mode = 1
+offset_left = 25.0
+offset_top = 440.0
+offset_right = 75.0
+offset_bottom = 490.0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/OpenSetts" unique_id=1511226954]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 7.5
+offset_top = 7.5
+offset_right = 42.5
+offset_bottom = 42.5
+mouse_filter = 2
+texture = ExtResource("12_ta0gc")
+expand_mode = 1
+
+[node name="Exit" type="Button" parent="MainMenu" unique_id=496773763]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 82.5
+offset_top = 440.0
+offset_right = -25.0
+offset_bottom = 491.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "[exit]"
+
+[node name="Yt" type="Button" parent="MainMenu" unique_id=265114899]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -75.0
+offset_right = 75.0
+offset_bottom = -25.0
+grow_vertical = 0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/Yt" unique_id=2092756993]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 7.5
+offset_top = 7.5
+offset_right = 42.5
+offset_bottom = 42.5
+mouse_filter = 2
+texture = ExtResource("14_pw4om")
+expand_mode = 1
+
+[node name="Tg" type="Button" parent="MainMenu" unique_id=1849756187]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 80.0
+offset_top = -75.0
+offset_right = 130.0
+offset_bottom = -25.0
+grow_vertical = 0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/Tg" unique_id=26143008]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 45.0
+offset_bottom = 45.0
+mouse_filter = 2
+texture = ExtResource("15_2ok6a")
+expand_mode = 1
+
+[node name="Itch" type="Button" parent="MainMenu" unique_id=953157986]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 135.0
+offset_top = -75.0
+offset_right = 185.0
+offset_bottom = -25.0
+grow_vertical = 0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/Itch" unique_id=1586009891]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 7.5
+offset_top = 7.5
+offset_right = 42.5
+offset_bottom = 42.5
+mouse_filter = 2
+texture = ExtResource("16_00gtv")
+expand_mode = 1
+
+[node name="Ds" type="Button" parent="MainMenu" unique_id=799859729]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 190.0
+offset_top = -75.0
+offset_right = 240.0
+offset_bottom = -25.0
+grow_vertical = 0
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_f2bxa")
+
+[node name="TextureRect" type="TextureRect" parent="MainMenu/Ds" unique_id=1040519612]
+modulate = Color(0.9019608, 0.6627451, 1, 1)
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 45.0
+offset_bottom = 45.0
+mouse_filter = 2
+texture = ExtResource("17_4vdhj")
+expand_mode = 1
+
+[node name="MyProjs" type="Control" parent="." unique_id=1253290037]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("8_7py46")
+
+[node name="Visual" type="Panel" parent="MyProjs" unique_id=377098416]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 85.0
+offset_right = -25.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Scroll" type="ScrollContainer" parent="MyProjs/Visual" unique_id=375809306]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Projects" type="VBoxContainer" parent="MyProjs/Visual/Scroll" unique_id=1535071886]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="NewProj" type="Panel" parent="MyProjs/Visual/Scroll/Projects" unique_id=998382604]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+script = ExtResource("10_mcmho")
+
+[node name="Title" type="Label" parent="MyProjs/Visual/Scroll/Projects/NewProj" unique_id=1541897272]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 355.0
+offset_bottom = 60.0
+text = "[newproj]"
+label_settings = SubResource("LabelSettings_5kx52")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Icon" type="Label" parent="MyProjs/Visual/Scroll/Projects/NewProj" unique_id=1769446142]
+layout_mode = 0
+offset_top = -15.0
+offset_right = 60.0
+offset_bottom = 75.0
+text = "+"
+label_settings = SubResource("LabelSettings_w1ip7")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Touch" type="Button" parent="MyProjs/Visual/Scroll/Projects/NewProj" unique_id=271917771]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 355.0
+offset_bottom = 60.0
+
+[node name="Import" type="Panel" parent="MyProjs/Visual/Scroll/Projects" unique_id=1823634079]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+script = ExtResource("11_thlol")
+
+[node name="Title" type="Label" parent="MyProjs/Visual/Scroll/Projects/Import" unique_id=422479208]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 355.0
+offset_bottom = 60.0
+text = "[import]"
+label_settings = SubResource("LabelSettings_dmum5")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Icon" type="Label" parent="MyProjs/Visual/Scroll/Projects/Import" unique_id=1408487509]
+layout_mode = 0
+offset_top = -5.0
+offset_right = 60.0
+offset_bottom = 62.0
+text = "↓"
+label_settings = SubResource("LabelSettings_6i2yb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Touch" type="Button" parent="MyProjs/Visual/Scroll/Projects/Import" unique_id=656114759]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 0
+offset_right = 355.0
+offset_bottom = 60.0
+
+[node name="Exit" type="Panel" parent="MyProjs" unique_id=123467486]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -75.0
+offset_right = -25.0
+offset_bottom = -25.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Label" type="Label" parent="MyProjs/Exit" unique_id=759446778]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+text = "Назад"
+label_settings = SubResource("LabelSettings_6i2yb")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Back" type="Button" parent="MyProjs/Exit" unique_id=695772072]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+
+[node name="Panel" type="Panel" parent="MyProjs" unique_id=1845381041]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = 75.0
+grow_horizontal = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="NewProj" type="Control" parent="." unique_id=2086818307]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("15_wksbx")
+
+[node name="Setts" type="Panel" parent="NewProj" unique_id=1317794997]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -90.0
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Scroll" type="ScrollContainer" parent="NewProj/Setts" unique_id=1827157298]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+
+[node name="Projects" type="VBoxContainer" parent="NewProj/Setts/Scroll" unique_id=585879019]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Project" type="Panel" parent="NewProj/Setts/Scroll/Projects" unique_id=176616681]
+custom_minimum_size = Vector2(355, 60)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_gbsbp")
+script = ExtResource("8_3btpq")
+
+[node name="Title" type="Label" parent="NewProj/Setts/Scroll/Projects/Project" unique_id=206229981]
+layout_mode = 0
+offset_left = 65.0
+offset_right = 355.0
+offset_bottom = 40.0
+text = "Айкон"
+label_settings = SubResource("LabelSettings_3qshi")
+autowrap_mode = 2
+
+[node name="Subtitle" type="Label" parent="NewProj/Setts/Scroll/Projects/Project" unique_id=1119877474]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 22.0
+offset_right = 355.0
+offset_bottom = 62.0
+text = "свг"
+label_settings = SubResource("LabelSettings_f8yt5")
+autowrap_mode = 2
+
+[node name="Panel" type="Panel" parent="NewProj/Setts/Scroll/Projects/Project" unique_id=1252749264]
+clip_children = 2
+layout_mode = 0
+offset_left = 5.0
+offset_top = 5.0
+offset_right = 55.0
+offset_bottom = 55.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_k4288")
+
+[node name="Icon" type="TextureRect" parent="NewProj/Setts/Scroll/Projects/Project/Panel" unique_id=2067513496]
+layout_mode = 0
+offset_right = 50.0
+offset_bottom = 50.0
+texture = SubResource("CompressedTexture2D_2qtvm")
+expand_mode = 1
+
+[node name="Butts" type="Control" parent="NewProj/Setts/Scroll/Projects/Project" unique_id=1913003631]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(1, 1e-05)
+
+[node name="Full" type="Control" parent="NewProj/Setts/Scroll/Projects/Project/Butts" unique_id=955506223]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Icons" type="Control" parent="NewProj/Setts/Scroll/Projects/Project/Butts" unique_id=994234304]
+visible = false
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Error" type="Label" parent="NewProj/Setts/Scroll/Projects/Project/Butts" unique_id=362850678]
+visible = false
+layout_mode = 0
+offset_left = 10.0
+offset_top = 62.0
+offset_right = 158.0
+offset_bottom = 92.75
+text = "Несовместимо"
+label_settings = SubResource("LabelSettings_b2p7y")
+
+[node name="MainSetts" type="ScrollContainer" parent="NewProj/Setts" unique_id=743894259]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 90.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Setts" type="VBoxContainer" parent="NewProj/Setts/MainSetts" unique_id=196766161]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=466354969]
+custom_minimum_size = Vector2(126, 30)
+layout_mode = 2
+text = "Настройки"
+label_settings = SubResource("LabelSettings_gpw3a")
+autowrap_mode = 2
+
+[node name="Title2" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=1638104369]
+custom_minimum_size = Vector2(126, 9)
+layout_mode = 2
+text = "Название"
+label_settings = SubResource("LabelSettings_6yoe3")
+autowrap_mode = 2
+
+[node name="GameName" type="LineEdit" parent="NewProj/Setts/MainSetts/Setts" unique_id=1665214458]
+custom_minimum_size = Vector2(0, 26)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6745098, 1, 1)
+theme_override_colors/selection_color = Color(0.556953, 0.556953, 0.5569529, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/caret_width = 1
+theme_override_constants/minimum_character_width = 4
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxsle")
+
+[node name="Title3" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=1426758069]
+custom_minimum_size = Vector2(126, 9)
+layout_mode = 2
+text = "Описание"
+label_settings = SubResource("LabelSettings_6yoe3")
+autowrap_mode = 2
+
+[node name="GameDesc" type="LineEdit" parent="NewProj/Setts/MainSetts/Setts" unique_id=1043441996]
+custom_minimum_size = Vector2(100, 26)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6745098, 1, 1)
+theme_override_colors/selection_color = Color(0.556953, 0.556953, 0.5569529, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxsle")
+
+[node name="Title4" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=459712574]
+custom_minimum_size = Vector2(126, 9)
+layout_mode = 2
+text = "Путь"
+label_settings = SubResource("LabelSettings_6yoe3")
+autowrap_mode = 2
+
+[node name="Path" type="LineEdit" parent="NewProj/Setts/MainSetts/Setts" unique_id=930655940]
+custom_minimum_size = Vector2(100, 26)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.6745098, 1, 1)
+theme_override_colors/selection_color = Color(0.58103293, 0.581033, 0.58103275, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = SubResource("StyleBoxFlat_wksbx")
+theme_override_styles/read_only = SubResource("StyleBoxFlat_3v1c7")
+theme_override_styles/focus = SubResource("StyleBoxFlat_kxsle")
+text = " Projects/Aikon"
+editable = false
+
+[node name="Title5" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=1072237225]
+custom_minimum_size = Vector2(126, 9)
+layout_mode = 2
+text = "Шаблон"
+label_settings = SubResource("LabelSettings_6yoe3")
+autowrap_mode = 2
+
+[node name="Primers" type="OptionButton" parent="NewProj/Setts/MainSetts/Setts" unique_id=987314455]
+layout_mode = 2
+theme = SubResource("Theme_wksbx")
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/normal_mirrored = ExtResource("2_gbsbp")
+theme_override_styles/pressed = ExtResource("2_gbsbp")
+theme_override_styles/pressed_mirrored = ExtResource("2_gbsbp")
+theme_override_styles/hover = ExtResource("2_gbsbp")
+theme_override_styles/hover_mirrored = ExtResource("2_gbsbp")
+theme_override_styles/hover_pressed = ExtResource("2_gbsbp")
+theme_override_styles/hover_pressed_mirrored = ExtResource("2_gbsbp")
+theme_override_styles/disabled = ExtResource("2_gbsbp")
+theme_override_styles/disabled_mirrored = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+selected = 0
+allow_reselect = true
+item_count = 4
+popup/item_0/text = " Пустой проект"
+popup/item_0/id = 0
+popup/item_1/text = " Кликер"
+popup/item_1/id = 1
+popup/item_2/text = " Планеты"
+popup/item_2/id = 2
+popup/item_3/text = " Защита печеньки"
+popup/item_3/id = 3
+
+[node name="Title6" type="Label" parent="NewProj/Setts/MainSetts/Setts" unique_id=461892697]
+custom_minimum_size = Vector2(126, 9)
+layout_mode = 2
+text = "Иконка"
+label_settings = SubResource("LabelSettings_6yoe3")
+autowrap_mode = 2
+
+[node name="Icon" type="Button" parent="NewProj/Setts/MainSetts/Setts" unique_id=2019215178]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = ExtResource("2_gbsbp")
+theme_override_styles/hover = ExtResource("2_gbsbp")
+theme_override_styles/disabled = ExtResource("2_gbsbp")
+theme_override_styles/focus = SubResource("StyleBoxFlat_qd6k7")
+text = " Загрузить иконку"
+alignment = 0
+
+[node name="IconIcon" type="Panel" parent="NewProj/Setts/MainSetts/Setts" unique_id=817018282]
+clip_children = 2
+custom_minimum_size = Vector2(131, 131)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_2qtvm")
+
+[node name="Icon" type="TextureRect" parent="NewProj/Setts/MainSetts/Setts/IconIcon" unique_id=431046120]
+layout_mode = 0
+offset_right = 131.0
+offset_bottom = 131.0
+texture = ExtResource("25_x4q4l")
+expand_mode = 1
+
+[node name="Frs" type="CheckBox" parent="NewProj/Setts/MainSetts/Setts" unique_id=1550691109]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+text = "Формулы"
+icon_alignment = 2
+
+[node name="Exit" type="Button" parent="NewProj" unique_id=762688012]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -75.0
+offset_right = -7.5
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "Назад"
+
+[node name="Create" type="Button" parent="NewProj" unique_id=674930258]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 7.5
+offset_top = -75.0
+offset_right = -25.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 35
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_2ok6a")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "Создать"
+
+[node name="Setts" type="Control" parent="." unique_id=1158909880]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("18_2qtvm")
+
+[node name="Setts" type="Panel" parent="Setts" unique_id=1545126716]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -90.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="MainSetts" type="ScrollContainer" parent="Setts/Setts" unique_id=167590725]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Setts" type="VBoxContainer" parent="Setts/Setts/MainSetts" unique_id=2076019876]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="Title" type="Label" parent="Setts/Setts/MainSetts/Setts" unique_id=1312540877]
+custom_minimum_size = Vector2(126, 30)
+layout_mode = 2
+text = "Настройки"
+label_settings = SubResource("LabelSettings_5i8rk")
+autowrap_mode = 2
+
+[node name="Overall" type="FoldableContainer" parent="Setts/Setts/MainSetts/Setts" unique_id=562219423]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/title_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+theme_override_styles/panel = SubResource("StyleBoxFlat_hcdi5")
+title = "Интерфейс"
+
+[node name="Cont" type="VBoxContainer" parent="Setts/Setts/MainSetts/Setts/Overall" unique_id=1102617840]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Title" type="HSeparator" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=2098332056]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(126, 6)
+layout_mode = 2
+
+[node name="Scl" type="HBoxContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1600711447]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Title6" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Scl" unique_id=185675173]
+custom_minimum_size = Vector2(60, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "Масштаб"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Mash" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Scl" unique_id=1882748376]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "( 100% )"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Scal" type="HSlider" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1495859570]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_lmvvn")
+theme_override_styles/grabber_area = ExtResource("2_gbsbp")
+theme_override_styles/grabber_area_highlight = ExtResource("2_gbsbp")
+min_value = 0.6
+max_value = 2.4
+step = 0.025
+value = 1.0
+
+[node name="MF" type="HBoxContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1916949100]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Title7" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/MF" unique_id=1944547111]
+custom_minimum_size = Vector2(85, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "Лимит кадров"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Mash" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/MF" unique_id=1475905124]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "( 60 )"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="MFP" type="HSlider" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1407335228]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_lmvvn")
+theme_override_styles/grabber_area = ExtResource("2_gbsbp")
+theme_override_styles/grabber_area_highlight = ExtResource("2_gbsbp")
+min_value = 30.0
+max_value = 30.0
+step = 5.0
+value = 30.0
+
+[node name="Tb" type="HBoxContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=486865769]
+layout_mode = 2
+
+[node name="Title8" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Tb" unique_id=406410710]
+custom_minimum_size = Vector2(90, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "Длина отступа"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Mash" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Tb" unique_id=1830502477]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = "( 60px )"
+label_settings = SubResource("LabelSettings_jlrdv")
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Tab" type="HSlider" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1660472320]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_lmvvn")
+theme_override_styles/grabber_area = ExtResource("2_gbsbp")
+theme_override_styles/grabber_area_highlight = ExtResource("2_gbsbp")
+max_value = 120.0
+step = 5.0
+value = 60.0
+
+[node name="Title4" type="HSeparator" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=995257205]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(126, 6)
+layout_mode = 2
+
+[node name="Repeat" type="Panel" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1024219918]
+clip_contents = true
+custom_minimum_size = Vector2(450, 40)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("18_mcmho")
+
+[node name="Label" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Repeat" unique_id=1612574327]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 5.0
+offset_right = 144.0
+offset_bottom = 35.25
+text = "Повторять"
+label_settings = SubResource("LabelSettings_2ok6a")
+
+[node name="Scroll" type="ScrollContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Repeat" unique_id=447443501]
+layout_mode = 0
+offset_left = 190.0
+offset_top = 5.0
+offset_right = 690.0
+offset_bottom = 50.0
+follow_focus = true
+scroll_hint_mode = 1
+
+[node name="LForms" type="LineEdit" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Repeat/Scroll" unique_id=842921909]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0.74138474, 0.7413847, 0.74138457, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/normal = ExtResource("19_thlol")
+theme_override_styles/read_only = ExtResource("19_thlol")
+theme_override_styles/focus = ExtResource("20_ta0gc")
+alignment = 1
+editable = false
+context_menu_enabled = false
+metadata/OCM = NodePath("")
+
+[node name="Obrabotka" type="Control" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Repeat" unique_id=1036554003]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("22_acw8i")
+
+[node name="Drag" type="Button" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Repeat" unique_id=205232518]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(60, 30)
+layout_mode = 0
+offset_left = 592.0
+offset_top = -46.0
+offset_right = 652.0
+offset_bottom = -6.0
+
+[node name="Title2" type="HSeparator" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1604563694]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(126, 0)
+layout_mode = 2
+
+[node name="Alert" type="Panel" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=812030847]
+clip_contents = true
+custom_minimum_size = Vector2(450, 70)
+layout_mode = 2
+theme_override_styles/panel = ExtResource("23_pw4om")
+
+[node name="Label" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=1672591676]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 2.5
+offset_right = 144.0
+offset_bottom = 32.75
+text = "Алерт"
+label_settings = SubResource("LabelSettings_00gtv")
+
+[node name="Text1" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=441567573]
+layout_mode = 0
+offset_left = 155.0
+offset_top = 2.5
+offset_right = 288.0
+offset_bottom = 32.75
+text = "Заголовок : "
+label_settings = SubResource("LabelSettings_00gtv")
+
+[node name="Text2" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=1430928531]
+layout_mode = 0
+offset_left = 65.0
+offset_top = 35.0
+offset_right = 198.0
+offset_bottom = 65.25
+text = "Текст : "
+label_settings = SubResource("LabelSettings_00gtv")
+
+[node name="Scroll" type="ScrollContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=1963537991]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 2.5
+offset_right = 790.0
+offset_bottom = 37.5
+follow_focus = true
+scroll_hint_mode = 1
+
+[node name="LForms" type="LineEdit" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert/Scroll" unique_id=221358141]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0.74138474, 0.7413847, 0.74138457, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/normal = ExtResource("19_thlol")
+theme_override_styles/read_only = ExtResource("19_thlol")
+theme_override_styles/focus = ExtResource("20_ta0gc")
+alignment = 1
+editable = false
+context_menu_enabled = false
+metadata/OCM = NodePath("")
+
+[node name="Scroll2" type="ScrollContainer" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=798485705]
+layout_mode = 0
+offset_left = 140.0
+offset_top = 35.0
+offset_right = 640.0
+offset_bottom = 75.0
+follow_focus = true
+scroll_hint_mode = 1
+
+[node name="LForms" type="LineEdit" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert/Scroll2" unique_id=475413523]
+custom_minimum_size = Vector2(0, 31)
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/selection_color = Color(0.74138474, 0.7413847, 0.74138457, 1)
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/normal = ExtResource("19_thlol")
+theme_override_styles/read_only = ExtResource("19_thlol")
+theme_override_styles/focus = ExtResource("20_ta0gc")
+alignment = 1
+editable = false
+context_menu_enabled = false
+metadata/OCM = NodePath("")
+
+[node name="Obrabotka" type="Control" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=1209208221]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("24_xr2sj")
+
+[node name="Drag" type="Button" parent="Setts/Setts/MainSetts/Setts/Overall/Cont/Alert" unique_id=839976680]
+modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(60, 70)
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="Title5" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1363215166]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = " На весь экран"
+label_settings = SubResource("LabelSettings_jlrdv")
+autowrap_mode = 2
+
+[node name="FSc" type="CheckButton" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1858231948]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = ExtResource("2_gbsbp")
+theme_override_styles/hover = ExtResource("2_gbsbp")
+theme_override_styles/hover_pressed = ExtResource("2_gbsbp")
+theme_override_styles/disabled = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+text = " На весь экран"
+
+[node name="Title3" type="Label" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=1417882586]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 0
+text = " Вертикальная синхронизация"
+label_settings = SubResource("LabelSettings_jlrdv")
+autowrap_mode = 2
+
+[node name="Vsync" type="CheckButton" parent="Setts/Setts/MainSetts/Setts/Overall/Cont" unique_id=715032272]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = ExtResource("2_gbsbp")
+theme_override_styles/hover = ExtResource("2_gbsbp")
+theme_override_styles/hover_pressed = ExtResource("2_gbsbp")
+theme_override_styles/disabled = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+button_pressed = true
+text = " Vsync"
+
+[node name="Graphics" type="FoldableContainer" parent="Setts/Setts/MainSetts/Setts" unique_id=101655182]
+visible = false
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/title_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+theme_override_styles/panel = SubResource("StyleBoxFlat_hcdi5")
+folded = true
+title = "Производительность "
+
+[node name="Cont" type="VBoxContainer" parent="Setts/Setts/MainSetts/Setts/Graphics" unique_id=308284813]
+visible = false
+layout_mode = 2
+
+[node name="Title" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/Graphics/Cont" unique_id=351456706]
+custom_minimum_size = Vector2(126, 10)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_4s0cy")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+bbcode_enabled = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="Scal" type="HSlider" parent="Setts/Setts/MainSetts/Setts/Graphics/Cont" unique_id=387131636]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_lmvvn")
+theme_override_styles/grabber_area = ExtResource("2_gbsbp")
+theme_override_styles/grabber_area_highlight = ExtResource("2_gbsbp")
+min_value = 0.8
+max_value = 1.6
+step = 0.025
+value = 1.0
+
+[node name="Title" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/Graphics/Cont/Scal" unique_id=1063169393]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -63.0
+offset_top = -15.0
+offset_right = 292.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 20
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("2_1ys5w")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 140
+theme_override_font_sizes/italics_font_size = 140
+theme_override_font_sizes/mono_font_size = 140
+bbcode_enabled = true
+text = " Масштаб"
+scroll_active = false
+autowrap_mode = 2
+vertical_alignment = 2
+
+[node name="System" type="FoldableContainer" parent="Setts/Setts/MainSetts/Setts" unique_id=220251318]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_styles/title_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_panel = ExtResource("2_gbsbp")
+theme_override_styles/title_collapsed_hover_panel = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+theme_override_styles/panel = SubResource("StyleBoxFlat_hcdi5")
+folded = true
+title = "Система"
+
+[node name="Cont" type="VBoxContainer" parent="Setts/Setts/MainSetts/Setts/System" unique_id=1622261697]
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/System/Cont" unique_id=1379605104]
+custom_minimum_size = Vector2(126, 1)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_4s0cy")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 20
+theme_override_font_sizes/bold_font_size = 20
+theme_override_font_sizes/bold_italics_font_size = 30
+theme_override_font_sizes/italics_font_size = 30
+theme_override_font_sizes/mono_font_size = 30
+bbcode_enabled = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="ASIN" type="HSlider" parent="Setts/Setts/MainSetts/Setts/System/Cont" unique_id=391284121]
+layout_mode = 2
+theme_override_styles/slider = SubResource("StyleBoxFlat_lmvvn")
+theme_override_styles/grabber_area = ExtResource("2_gbsbp")
+theme_override_styles/grabber_area_highlight = ExtResource("2_gbsbp")
+min_value = 2.0
+max_value = 60.0
+value = 20.0
+
+[node name="Title" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/System/Cont/ASIN" unique_id=2012550899]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -63.0
+offset_top = -15.0
+offset_right = 292.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 20
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("2_1ys5w")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 140
+theme_override_font_sizes/italics_font_size = 140
+theme_override_font_sizes/mono_font_size = 140
+bbcode_enabled = true
+text = "Интервал автосохранения"
+scroll_active = false
+autowrap_mode = 2
+vertical_alignment = 2
+
+[node name="Mash" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/System/Cont/ASIN" unique_id=966292006]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -63.0
+offset_top = -14.0
+offset_right = 292.0
+offset_bottom = 1.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 20
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("2_1ys5w")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 140
+theme_override_font_sizes/italics_font_size = 140
+theme_override_font_sizes/mono_font_size = 140
+bbcode_enabled = true
+text = "                                                                            ( 60с )"
+scroll_active = false
+autowrap_mode = 2
+vertical_alignment = 2
+
+[node name="Autosave" type="CheckButton" parent="Setts/Setts/MainSetts/Setts/System/Cont" unique_id=227596691]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_1ys5w")
+theme_override_font_sizes/font_size = 12
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = ExtResource("2_gbsbp")
+theme_override_styles/hover = ExtResource("2_gbsbp")
+theme_override_styles/hover_pressed = ExtResource("2_gbsbp")
+theme_override_styles/disabled = ExtResource("2_gbsbp")
+theme_override_styles/focus = ExtResource("2_gbsbp")
+button_pressed = true
+text = " Автосохранение"
+
+[node name="Title" type="RichTextLabel" parent="Setts/Setts/MainSetts/Setts/System/Cont/Autosave" unique_id=947188104]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -63.0
+offset_top = -15.0
+offset_right = 292.0
+grow_horizontal = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/line_separation = 20
+theme_override_constants/outline_size = 0
+theme_override_fonts/normal_font = ExtResource("2_1ys5w")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 140
+theme_override_font_sizes/italics_font_size = 140
+theme_override_font_sizes/mono_font_size = 140
+bbcode_enabled = true
+text = " Автосохранение"
+scroll_active = false
+autowrap_mode = 2
+vertical_alignment = 2
+
+[node name="Exit" type="Button" parent="Setts" unique_id=1893756934]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -72.5
+offset_right = -25.0
+offset_bottom = -21.5
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "ОК"
+
+[node name="Click" type="AudioStreamPlayer" parent="." unique_id=442370788]
+stream = ExtResource("26_ta0gc")
+volume_db = -13.0
+
+[node name="Projex" type="Control" parent="." unique_id=1466181651]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="ColorRect" parent="Projex" unique_id=1023801782]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6039216)
+
+[node name="Panel" type="Panel" parent="Projex" unique_id=750645092]
+self_modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 50.0
+offset_top = 365.0
+offset_right = -50.0
+offset_bottom = -365.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Label" type="Label" parent="Projex/Panel" unique_id=110415956]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 46.125
+grow_horizontal = 2
+text = "Предупреждение"
+label_settings = SubResource("LabelSettings_thlol")
+horizontal_alignment = 1
+
+[node name="Label2" type="Label" parent="Projex/Panel" unique_id=1480924352]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 47.0
+offset_bottom = 93.125
+grow_horizontal = 2
+text = "проект с данным именем уже существует
+"
+label_settings = SubResource("LabelSettings_eqr3n")
+horizontal_alignment = 1
+
+[node name="CancelNew" type="Button" parent="Projex/Panel" unique_id=1555829288]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.5
+offset_left = 5.0
+offset_top = 75.0
+offset_right = -2.5
+offset_bottom = 115.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "Отмена"
+
+[node name="ReNew" type="Button" parent="Projex/Panel" unique_id=1308596867]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_right = 1.0
+offset_left = 1.25
+offset_top = 75.0
+offset_right = -0.07501221
+offset_bottom = 115.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "Перезаписать"
+
+[node name="Info" type="Control" parent="." unique_id=381301075]
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="ColorRect" parent="Info" unique_id=699110340]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.6039216)
+
+[node name="Back" type="Button" parent="Info" unique_id=928310616]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = -76.0
+offset_right = -25.0
+offset_bottom = -25.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_colors/font_focus_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("1_4s0cy")
+theme_override_font_sizes/font_size = 36
+theme_override_styles/normal = ExtResource("2_gbsbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_x4q4l")
+theme_override_styles/hover = SubResource("StyleBoxFlat_f2bxa")
+theme_override_styles/focus = SubResource("StyleBoxFlat_iur40")
+text = "Назад"
+
+[node name="Panel" type="Panel" parent="Info" unique_id=892028396]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 25.0
+offset_top = 25.0
+offset_right = -25.0
+offset_bottom = -85.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_gbsbp")
+
+[node name="Label" type="Label" parent="Info/Panel" unique_id=1125192726]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 46.125
+grow_horizontal = 2
+text = "Информация"
+label_settings = SubResource("LabelSettings_thlol")
+horizontal_alignment = 1
+
+[node name="Info" type="RichTextLabel" parent="Info/Panel" unique_id=460292347]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 5.0
+offset_top = 47.0
+offset_right = -5.0
+offset_bottom = -54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/default_color = Color(0.9019608, 0.6627451, 1, 1)
+theme_override_fonts/normal_font = ExtResource("1_4s0cy")
+theme_override_fonts/bold_font = ExtResource("2_1ys5w")
+theme_override_font_sizes/normal_font_size = 18
+theme_override_font_sizes/bold_font_size = 18
+theme_override_font_sizes/bold_italics_font_size = 18
+theme_override_font_sizes/italics_font_size = 18
+theme_override_font_sizes/mono_font_size = 14
+bbcode_enabled = true
+text = "Dot - Open Source инструмент для создания игр с помощью [rainbow][wave]визуального программирования[/wave][/rainbow]
+
+просто перетаскивайте [u][color=#aaffaa]блоки[/color][/u] и готово!
+"
+horizontal_alignment = 1
+script = ExtResource("34_x4q4l")
+
+[node name="Timer" type="Timer" parent="." unique_id=550560953]
+wait_time = 0.1
+autostart = true
+
+[node name="secret" type="Button" parent="." unique_id=1161851937]
+modulate = Color(1, 1, 1, 0)
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -50.0
+offset_top = 47.0
+offset_right = 50.0
+offset_bottom = 147.0
+grow_horizontal = 2
+
+[connection signal="pressed" from="Holders/Project/Butts/Full/HBoxContainer/Launch" to="Holders/Project" method="_on_launch_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Full/HBoxContainer/Edit" to="Holders/Project" method="_on_edit_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Full/HBoxContainer/Delete" to="Holders/Project" method="_on_delete_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Icons/Launch/Launch" to="Holders/Project" method="_on_launch_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Icons/Edit/Edit" to="Holders/Project" method="_on_edit_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Icons/Delete/Delete" to="Holders/Project" method="_on_delete_pressed"]
+[connection signal="pressed" from="Holders/Project/Butts/Error/Delete" to="Holders/Project" method="_on_delete_pressed"]
+[connection signal="pressed" from="Holders/Project/Touch" to="Holders/Project" method="_on_button_pressed"]
+[connection signal="pressed" from="MainMenu/LastProj/Cont/Butts/Full/HBoxContainer/Launch" to="MainMenu/LastProj" method="_on_launch_pressed"]
+[connection signal="pressed" from="MainMenu/LastProj/Cont/Butts/Full/HBoxContainer/Edit" to="MainMenu/LastProj" method="_on_edit_pressed"]
+[connection signal="pressed" from="MainMenu/LastProj/Cont/Butts/Icons/Launch" to="MainMenu/LastProj" method="_on_launch_pressed"]
+[connection signal="pressed" from="MainMenu/LastProj/Cont/Butts/Icons/Edit" to="MainMenu/LastProj" method="_on_edit_pressed"]
+[connection signal="pressed" from="MainMenu/LastProj/New/new" to="." method="_on_new_pressed"]
+[connection signal="pressed" from="MainMenu/ProjFold" to="." method="_on_proj_fold_pressed"]
+[connection signal="pressed" from="MainMenu/MyProjs" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MainMenu/Info" to="." method="_on_info_pressed"]
+[connection signal="pressed" from="MainMenu/Docs" to="." method="_on_docs_pressed"]
+[connection signal="pressed" from="MainMenu/OpenSetts" to="." method="_on_open_setts_pressed"]
+[connection signal="pressed" from="MainMenu/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MainMenu/Yt" to="." method="_on_yt_pressed"]
+[connection signal="pressed" from="MainMenu/Tg" to="." method="_on_tg_pressed"]
+[connection signal="pressed" from="MainMenu/Itch" to="." method="_on_itch_pressed"]
+[connection signal="pressed" from="MainMenu/Ds" to="." method="_on_ds_pressed"]
+[connection signal="pressed" from="MyProjs/Visual/Scroll/Projects/NewProj/Touch" to="MyProjs/Visual/Scroll/Projects/NewProj" method="_on_touch_pressed"]
+[connection signal="pressed" from="MyProjs/Visual/Scroll/Projects/Import/Touch" to="MyProjs/Visual/Scroll/Projects/Import" method="_on_touch_pressed"]
+[connection signal="pressed" from="MyProjs/Exit/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="NewProj/Setts/MainSetts/Setts/Icon" to="NewProj" method="_on_icon_pressed"]
+[connection signal="pressed" from="NewProj/Exit" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="NewProj/Create" to="." method="_on_create_pressed"]
+[connection signal="pressed" from="Setts/Exit" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="Projex/Panel/CancelNew" to="." method="_on_cancel_new_pressed"]
+[connection signal="pressed" from="Projex/Panel/ReNew" to="." method="_on_re_new_pressed"]
+[connection signal="pressed" from="Info/Back" to="." method="_on_back_pressed"]
+[connection signal="meta_clicked" from="Info/Panel/Info" to="Info/Panel/Info" method="_on_meta_clicked"]
+[connection signal="timeout" from="Timer" to="." method="tickk"]
+[connection signal="pressed" from="secret" to="." method="secret"]
