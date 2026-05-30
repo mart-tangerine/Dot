@@ -1632,6 +1632,8 @@ func _process(delt: float) -> void:
 		x.custom_minimum_size.x = Disp.x - 65
 
 func _input(event: InputEvent) -> void:
+	if $Loading.visible:
+		return
 	if event is InputEventScreenTouch:
 		if event.pressed:
 			var cursc = null
@@ -1976,6 +1978,8 @@ func _on_back_pressed() -> void:
 
 func _notification(what):
 	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		if $Loading.visible:
+			return
 		if not mode:
 			if $Katalog.visible or %ModlKat.visible or $FE.visible or $FormulEdit.visible:
 				$Click.play()
@@ -2049,6 +2053,7 @@ func _on_plus_pressed() -> void:
 			sndo.name = pth.get_file().get_basename()
 			sndo.get_node("Title").text = pth.get_file().get_basename()
 			$Files/Files/Hernya/Snds.add_child(sndo)
+		save_proj()
 			
 
 func expr():
@@ -2225,6 +2230,7 @@ func _on_new_scene_pressed() -> void:
 	var last_index = parent.get_child_count() - 1
 	parent.move_child($Project/UIelems, last_index)
 	$NewScene.hide()
+	save_proj()
 
 func _on_new_obj_pressed() -> void:
 	var scn = ""
@@ -2265,6 +2271,7 @@ func _on_new_obj_pressed() -> void:
 	$Scripts.get_node(scn).add_child(scrip)
 	scrip.name = w
 	$NewObj.hide()
+	save_proj()
 
 func nds(node, cnt):
 	var dcnt = 0

@@ -1,7 +1,7 @@
 extends Node
 const arch = 2
-const dotver = 1500
-const ver = "r1"
+const dotver = 1600
+const ver = "r1.1"
 var lang = "ru"
 const table = {
 	"[or]" : {
